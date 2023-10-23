@@ -31,6 +31,7 @@ namespace FileProcessing
         private void TextBox_DragDrop(object sender, DragEventArgs e)//拖放完成时发生
         {
             //这里显示文件名
+
             ((TextBox)sender).Text = ((System.Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString();
         }
 
